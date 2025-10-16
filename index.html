@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Pemograman Website</title>
+    <title>Portofolio Septia</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 </head>
 <body>
-    <h1>Pengenalan Lingkungan lab dan GIT </h1>
+    <header class="main-header">
+        <h1>My Portofolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#content">Home</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="content">
+        <h2>Tentang Saya</h2>
+        <div class ="about-section">
+            <div class="about-text">
+                <h4>HALLO SEMUANYA,</h4>
+                <h3 id="demo"></h3>
+                <p>Nama saya <strong>Septiana Puji Astuti</strong>, mahasiswa Informatika semester 3 yang memiliki ketertarikan besar di dunia teknologi, desain web, dan pengembangan antarmuka pengguna.  
+Saya senang belajar hal-hal baru terutama yang berkaitan dengan <b>HTML, CSS, dan JavaScript</b> untuk membangun website yang menarik dan mudah digunakan.  
+Bagi saya, coding bukan hanya tentang menulis baris program, tapi juga tentang menciptakan karya yang bisa membantu dan menginspirasi orang lain.
+</p> 
+                <button onclick="showMessage()">Klik Saya</button>
+            </div>
+
+            <div class="about-image">
+                <img src="imut.png" alt="ikon-penyambutan" class="gambarimut-img"/>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Struktur website</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Styling & Layout</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Interaktivitas</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>UI Framework</p>
+            </div>
+        </div>
+    </section>
+</main>
+    <section id="contact" style="padding: 3rem 1rem;background-color:  hsl(339, 74%, 86%);">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Nama</label>
+                    <input id="name" name="name" type="text" placeholder="Nama Lengkap" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label> 
+                    <input id="email" name="email" type="email" placeholder="email@contoh.com" required />
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Pesan</label> 
+                    <textarea id="message" name="message" rows="6" placeholder="Tulis pesanmu disini..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Kirim</button>
+                    <span id="form-status" aria-live="polite"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+ 
+ <footer>
+    <p>&copy; 2025 Praktikum Pemrograman Web</p>
+ </footer>
+ <script src="script.js"></script>
+ 
+    
 </body>
 </html>
